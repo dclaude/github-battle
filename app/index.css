@@ -1,0 +1,162 @@
+body {
+  /* this rule is used to use a good font (it is also used on other websites like medium, ...) */
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+ul {
+  /* to remove the padding */
+  padding: 0;
+}
+
+li {
+  /* to remove the bullet point */
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.container {
+  max-width: 1200px;
+  /*
+  - if the margin property has two values:
+  margin: 25px 50px;
+  top and bottom margins are 25px
+  right and left margins are 50px
+  - auto: the browser calculates the margin
+  */
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+
+.column input {
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.43);
+  font-size: 16px;
+  width: 80%;
+}
+
+.column label {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+} 
+
+.languages {
+  display: flex;
+  /* flex-direction: default in a browser is row */
+  justify-content: center;
+}
+
+.languages li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.popular-rank {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.space-list-item {
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  color: #e6e6e6;
+  /* background is a shorthand property */
+  background: #0a0a0a;
+  border: none;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 200px;
+  text-align: center;
+  display: block;
+  padding: 7px 0;
+  margin: 10px auto;
+}
+
+/* qd le button est hovered ... */
+.button:hover:enabled {
+  /* on change un peu le background ... */
+  background: linear-gradient(#1a1a1a,#0a0a0a);
+  /* et on change un la color du button */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* qd on clique sur le button ... */
+.button:active {
+  /* on deplace un petit peu le button vers le bas */
+  transform: translateY(1px);
+}
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
+} 
+
